@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "DINOT-Light";
+    src: url(../FF_DIN_Light.ttf);
+}
+
+
+.input-field .ui-input-text {
+  background: transparent !important;
+      border-bottom: 1px solid #D2D2D2;
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+}
+
+.input-field label {
+  position: absolute;
+  top: 0.8rem;
+  left: 0px;
+  font-size: 1rem;
+  cursor: text;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.input-field .ui-focus + label, .input-field .ui-active + label {
+  font-size: 0.8rem;
+  -webkit-transform: translateY(-120%);
+  -moz-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  -o-transform: translateY(-120%);
+  transform: translateY(-120%);
+}
+
+.input-field .ui-input-clear {
+  border-radius: 1rem !important;
+}
+
+.input-field input:not(:focus) {
+  color: transparent;
+}
+
+.input-field .ui-active input {
+  color: inherit;
+}
+
+.input-field input[type=text],
+.input-field input[type=email]{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 2em;
+  width: 100%;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}

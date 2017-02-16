@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="http://sindevo.com/mobix/apple-touch-startup-image-640x1096.png">
+<title>Anyway</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style1.css">
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+  <div class="pages">
+    <div data-page="projects" class="page no-toolbar no-navbar">
+      <div class="page-content">
+      
+        <div class="navbarpages">
+       <div data-role="header" class="main-header">
+        <a href="#" class="ui-btn ui-icon-home ui-btn-new"><img src="img/back arrow.png"></a>
+        <h1 class="header-center">Contacts</h1>
+        <!-- <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left ">Search</a> -->
+      </div>
+     </div>
+       
+       <div id="pages_maincontent">
+        
+        <!-- <h2 class="page_title">Features list</h2> -->
+        
+        <div class="page_content">
+
+        <form class="input-p">
+  <input type="text" name="search" placeholder="Enter a name or email address">
+</form>
+        
+        <ul class="features_list_detailed">
+        
+            <li>
+           <a href="2_4.html" data-transition="pop"> <div class="feat_small_icon"><img src="img/jamie shanks.png" alt="" title="" /></div>
+            <div class="feat_small_details">
+              <span class="left-class-p">
+                <h4 class="main-head">Jamin Shanks</h4>
+                <p class="sub-heading1">Lipsum dolor sit amet</p>
+              </span>
+            </div>
+            <!-- <div class="view_more"><a href="photos.html"><img src="images/load_posts_disabled.png" alt="" title="" /></a></div> -->
+            </a>
+            </li> 
+            
+            <li onclick="to_next_screen()">
+            <div class="feat_small_icon"><img src="img/josh turner.png" alt="" title="" /></div>
+            <div class="feat_small_details">
+            <span class="left-class-p">
+              <h4 class="main-head">Josh turner</h4>
+              <p class="sub-heading1">ipsum dolor sit amet</p>
+            </span>
+            </div>
+            <!-- <div class="view_more"><a href="blog.html"><img src="images/load_posts_disabled.png" alt="" title="" /></a></div> -->
+            </li> 
+            
+            <li onclick="to_next_screen()">
+            <div class="feat_small_icon"><img src="img/jill konarth.png" alt="" title="" /></div>
+            <div class="feat_small_details">
+            <span class="left-class-p">
+              <h4 class="main-head">Jill Konarth</h4>
+              <p class="sub-heading1">ipsum dolor sit amet</p>
+            </span>
+            </div>
+            <!-- <div class="view_more"><a href="features.html#" data-popup=".popup-login" class="open-popup"><img src="images/load_posts_disabled.png" alt="" title="" /></a></div> -->
+            </li>
+            
+            <li onclick="to_next_screen()">
+            <div class="feat_small_icon"><img src="img/phani ayya.png" alt="" title="" /></div>
+            <div class="feat_small_details">
+            <span class="left-class-p">
+              <h4 class="main-head">Phani Ayyalanniya</h4>
+              <p class="sub-heading1">ipsum dolor sit amet</p>
+            </span>
+            </div>
+            <!-- <div class="view_more"><a href="features.html#" data-panel="left" class="open-panel"><img src="images/load_posts_disabled.png" alt="" title="" /></a></div> -->
+            </li>
+                  
+            <li onclick="to_next_screen()">
+            <div class="feat_small_icon"><img src="img/josh turner.png" alt="" title="" /></div>
+            <div class="feat_small_details">
+            <span class="left-class-p">
+              <h4 class="main-head">Dr. Mark D.shaver</h4>
+              <p class="sub-heading1">ipsum dolor sit amet</p>
+            </span>
+            </div>
+            <!-- <div class="view_more"><a href="tabs.html"><img src="images/load_posts_disabled.png" alt="" title="" /></a></div> -->
+            </li>
+            
+            <li onclick="to_next_screen()">
+            <div class="feat_small_icon"><img src="img/Rose royle.png" alt="" title="" /></div>
+            <div class="feat_small_details">
+            <span class="left-class-p">
+              <h4 class="main-head">Jullia Almando</h4>
+              <p class="sub-heading1">ipsum dolor sit amet</p>
+            </span>
+            </div>
+            <!-- <div class="view_more"><a href="http://sindevo.com/mobix/toogle.html"><img src="images/load_posts_disabled.png" alt="" title="" /></a></div> -->
+            </li>
+            
+            
+            
+        </ul>
+        
+        
+        </div>
+        
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+ <script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+<script type="text/javascript">
+function to_next_screen()
+{
+  $.mobile.changePage( "2_4.html", { transition: "fade ", changeHash: false });  
+}
+
+</script>
+</body>
+</html>

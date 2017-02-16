@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="http://sindevo.com/mobix/apple-touch-startup-image-640x1096.png">
+<title>Anyway</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style1.css">
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.material.theme.css" />   
+<link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+</head>
+<body id="mobile_wrap">
+
+    
+       <div data-role="header" class="">
+        <!-- <a href="#" class="ui-btn ui-icon-home ui-btn-new"><img src="img/back arrow.png"></a> -->
+        <h1 class="header-center index-header"><img src="img/1.logo_new1.png"></h1>
+        <!-- <a href="#" class="ui-btn ui-icon-home ui-btn-new"><img src="img/4th.png"></a> -->
+      </div>
+
+      <div data-role="main" class="center-class-index">
+        <form method="">
+          <div class="ui-field-contain pad-class-1">
+            <input type="text" name="fullname" id="fullname" class="input-new-class-1 mobile-img" placeholder="Mobile Number"> 
+            <div class="middle-index">
+              <img src="img/or.png">
+            </div>
+            <input type="text" name="fullname" id="fullname" class="input-new-class-1 phone-img" placeholder="Email Address"> 
+            <div class="left-right">
+            <div class="padding-p-c">
+              <div class="left-class1">
+                <label for="radio-choice-0a">
+                  <img src="img/enter pin.png">
+                  <input type="radio" name="radio-choice-0" id="radio-choice-0a" class="custom" checked>
+                  
+                </label>
+                <label class="sub-heading">Finger Print</label>
+              </div>
+
+              <div class="right-class1">
+                <label for="radio-choice-0b">
+                  <img src="img/finger_print.png">
+                  <input type="radio" name="radio-choice-0" id="radio-choice-0b" class="custom">
+                  
+                </label>
+                <label class="sub-heading">Finger Print</label>
+              </div>
+              </div>
+            </div>
+          </div>
+
+        </form> 
+
+
+        <div data-role="popup" id="myPopup1" class="pop1">
+          <div class="ui-content temp-sec">
+            <h3  class="temp">Temporary Pin</h3>
+            <p style="text-align:center">Temporary Pin has been sent to the mobile number or email address provided</p>
+          </div>
+          <a  class="ui-btn form-ok">Ok </a>
+        </div>  
+
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <a href="#myPopup1"  data-transition="slideup" data-rel="popup"  data-position-to="window" class="ui-btn ui-btn-class1">
+        Continue <img src="img/arrow.png" class="continue-arrow">
+      </a>
+      <div class="dot-main">
+        <label class="dot-fill"></label>
+        <label class="dot-unfill"></label>
+      </div>
+    </div>
+
+  <script type="text/javascript">  
+      $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+       });
+  </script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!-- <script src="js/materialize.min.js"> -->
+</script> 
+</body>
+</html>

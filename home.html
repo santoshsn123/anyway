@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="http://sindevo.com/mobix/apple-touch-startup-image-640x1096.png">
+<title>index</title>
+<link rel="stylesheet" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header" class="header-set1">
+  <a href="#overlayPanel" class="newly_setting"><img src="images/side menu_new.png"></a>
+  <h1><img src="images/logo.png" style="width:85%"></h1>
+  </div>
+
+ <div data-role="panel" class="setting-allow" id="overlayPanel" data-display="overlay"> 
+     <div class="ui-grid-a grid-aqua">
+     <div class="profile1-view">
+     <img src="images/profile_new.png">
+   <label class="profile1-view2">132</label>
+    </div>
+    <h3 class="profile1-view1">STEVE OLANG</h3>
+  </div>
+
+     <div data-role="main" class="" style="padding:0em 1em">
+  <!-- Contenedor -->
+<ul id="accordion" class="accordion">
+  <li>
+    <div class="link"><img src="images/home_white.png"> Home</div>
+   
+  </li>
+  <li>
+    <div class="link"><img src="images/payment.png"> Payment</div>
+    
+  </li>
+  <li>
+    <div class="link"><img src="images/shop1.png"> Shop <i class="fa fa-chevron-down"></i></div>
+    <ul class="submenu">
+      <li><a href="#">Tablet</a></li>
+      <li><a href="#">Mobile</a></li>
+      <li><a href="#">Desktop</a></li>
+    </ul>
+  </li>
+  <li>
+    <div class="link"><img src="images/account.png"> Accounts</div>
+   </li>
+
+   <li>
+    <div class="link"><img src="images/chat.png"> Chat</div>
+   </li>
+
+    <li>
+    <div class="link"><img src="images/contact.png"> Contacts</div>
+   </li>
+
+   <li>
+    <div class="link"><img src="images/NFC.png"> NFC</div>
+   </li>
+   <li>
+    <div class="link"><img src="images/settings.png"> Setting</div>
+   </li>
+   <li>
+    <div class="link"><img src="images/notification.png"> Notification</div>
+   </li>
+   <li>
+    <div class="link"><img src="images/help.png"> Help</div>
+   </li>
+   <li>
+    <div class="link"><img src="images/logout.png"> Logout</div>
+   </li>
+</ul>
+  </div>
+  </div> 
+  <div data-role="main">
+
+    <div class="ui-grid-a">
+      <div class="profile-view">
+        <img src="images/profile_new.png">
+        <label class="profile-view2">132</label>
+      </div>
+      <h3 class="profile-view1">STEVE OLANG</h3>
+    </div>
+
+   <div class="ui-grid-solo ui-backprogile">
+      <div class="ui-block-a">
+        <h1 href="#" class="" style="text-align:center">$100.00</h1>
+        <p style="text-align:center">Balance</p>
+      </div>
+    </div>
+
+    <div class="ui-grid-a">
+    <div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li class="new1"><a href="#" data-icon="home" style="color:#330067;text-align:center">Payment Request</a></li>
+        <li class="new1"><a href="#" data-icon="info" style="color:#330067;text-align:center">Send Payment</a></li>
+      </ul>
+      </div>
+    </div>
+
+     <div class="ui-grid-b new1">
+         <div data-role="navbar" data-iconpos="top">
+      <ul>
+        <li class="new1"><a href="#" data-icon="heart" style="color:#330067;text-align:center">Scan</a></li>
+        <li class="new1"><a href="#" data-icon="location" style="color:#330067;text-align:center">Shop</a></li>
+      
+      </ul>
+      </div>
+    </div>
+  </div>
+    <div data-role="footer" class="" data-position="fixed">
+        <a href="#" class="ui-btn ui-corner-all footerset1 ui-shadow"><img src="images/logo.png"></a>
+    </div>
+  </div>
+
+
+
+   
+
+          
+      <!-- second -->
+ 
+
+   
+    
+<!-- Include the jQuery library -->
+
+<!-- Include the jQuery Mobile library -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  } 
+
+  var accordion = new Accordion($('#accordion'), false);
+});
+</script>
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+
+
+  $( document ).on( "pageinit", "#pageone", function() {
+    $( document ).on( "swipeleft swiperight", "#pageone", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        // console.log($.mobile.activePage.jqmData( "panel" ) !== "open");
+        if ( ($.mobile.activePage.jqmData( "panel" ) !== "open")&&(e.type === "swiperight") ) {
+            // if ( e.type === "swipeleft"  ) {
+            //     $( "#overlayPanel" ).panel( "open" );
+            // } else if ( e.type === "swiperight" ) {
+                $( "#overlayPanel" ).panel( "open" );
+            // }
+        }else if(($.mobile.activePage.jqmData( "panel" ) == "open")&&(e.type === "swipeleft")){
+          $( "#overlayPanel" ).panel( "close" );
+        }
+    });
+});
+</script>
+  </body>
+</html>

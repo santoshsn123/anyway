@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="http://sindevo.com/mobix/apple-touch-startup-image-640x1096.png">
+<title>Anyway</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style1.css">
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.material.theme.css" />   
+<link href="css/materialize.min.css" rel="stylesheet" type="text/css">
+</head>
+<body id="mobile_wrap">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="pages">
+  <div data-page="projects" class="page no-toolbar no-navbar">
+    <div class="page-content">
+    
+     <div class="navbarpages">
+       <div data-role="header" class="main-header">
+        <a href="#" class="ui-btn ui-icon-home ui-btn-new"><img src="img/back arrow.png"></a>
+        <h1 class="header-center">Shipping Address</h1>
+        <!-- <a href="#" class="ui-btn ui-icon-home ui-btn-new"><img src="img/4th.png"></a> -->
+      </div>
+     </div>
+
+     <div id="pages_maincontent">
+
+      <div data-role="main">
+
+        <!-- <div class="ui-grid-a-p">
+          <div class="profile-view">
+            <img src="img/profile_nc.png">
+            <label class="profile1-view2-p"><img src="img/camera icon.png"></label>
+          </div>
+        </div> -->
+    <ul class="class-5-2">
+      <li>
+        <div class="input-field">
+          <input data-corners="false" type="text" value="" data-clear-btn-text="" data-clear-btn="true" id="input-1">
+          <label for="input-1" class="ui-label-personal">Address Line 1
+          </label>
+        </div>
+      </li>
+
+      <li>
+        <div class="input-field">
+          <input data-corners="false" type="text" value="" data-clear-btn-text="" data-clear-btn="true" id="input-2">
+          <label for="input-2" class="ui-label-personal">Address Line 2
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="input-field">
+          <input data-corners="false" type="text" value="" data-clear-btn-text="" data-clear-btn="true" id="input-3">
+          <label for="input-3" class="ui-label-personal">Suburb
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="input-field">
+          <input data-corners="false" type="text" value="" data-clear-btn-text="" data-clear-btn="true" id="input-4">
+          <label for="input-4" class="ui-label-personal">City
+          </label>
+        </div>
+      </li> 
+      <li>
+        <div class="input-field">
+          <input data-corners="false" type="text" value="" data-clear-btn-text="" data-clear-btn="true" id="input-5">
+          <label for="input-5" class="ui-label-personal">State
+          </label>
+        </div>
+      </li> 
+      <li class="padding-no">
+        <form>
+          <div class="ui-field-contain padding-no">
+              <select name="select-native-2" id="select-native-2" data-mini="true">
+                  <option value="1">Country</option>
+                  <option value="2">The 2nd Option</option>
+                  <option value="3">The 3rd Option</option>
+                  <option value="4">The 4th Option</option>
+              </select>
+          </div>
+          </form>
+      </li> 
+      <li class="li-width">
+        <div class="input-field">
+          <input data-corners="false" type="text" value="" data-clear-btn-text="" data-clear-btn="true" id="input-6">
+          <label for="input-6" class="ui-label-personal">Zip
+          </label>
+        </div>
+      </li> 
+    </ul>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+            <a href="#" class="ui-btn ui-btn-class1">Submit
+            </a>
+          </div>
+</div>
+  <script type="text/javascript">  
+      $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+       });
+  </script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!-- <script src="js/materialize.min.js"> -->
+</script> 
+</body>
+</html>
